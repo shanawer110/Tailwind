@@ -1,129 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>Networking</title>
-  <link rel="shortcut icon" href="121.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockStar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="images/icon2.png" type="image/x-icon">
 </head>
-<body>
-  <section>
-     <div class="flex justify-around space-x-44 bg-white p-3">
-       <h1 class="text-blue-600 font-bold p-2 text-3xl cursor-pointer">Software House</h1>
-       <ul class="text-black-600 font-serif	flex text-base items-center space-x-24">
-         <li class="hover:text-red-700"><a href="#">Home</a></li>
-         <li class="hover:text-red-700"><a href="#">About</a></li>
-         <li class="hover:text-red-700"><a href="#">Services</a></li>
-         <li class="hover:text-red-700"><a href="#">Contact</a></li>
-       </ul>
-     </div> 
+<body class="bg-gray-900 text-white">
+    <!-- Navbar -->
+    <nav class="bg-black py-4 px-6 flex justify-between items-center">
+        <div class="text-2xl font-stretch-125% hover:animate-bounce"><a href="https://www.rockstargames.com/" target="_blank">ROCKSTAR</a>
+        </div>
+        <ul class="flex space-x-6">
+            <li><a href="#" class="hover:text-blue-500 font-bold">Home</a></li>
+            <li><a href="#" class="hover:text-blue-500 font-bold">About</a></li>
+            <li><a href="#" class="hover:text-blue-500 font-bold">Services</a></li>
+            <li><a href="#" class="hover:text-blue-500 font-bold">Join Us</a></li>
+            <li><a href="#" class="hover:text-blue-500 font-bold">Contact</a></li>
+        </ul>
+        <input type="text" placeholder="Search" class="py-1 px-3 rounded border-2 bg-black text-gray-200 focus:outline-none">
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="relative h-96 bg-cover bg-center" style="background-image: url('https://via.placeholder.com/1500');">
+        <div class="bg-[url(/images/back1.jpg)] bg-cover  absolute inset-0  flex flex-col justify-center items-center">
+           <div class="py-6 justify-end  rounded">
+            <h1 class="text-4xl font-bold animate-bounce">Welcome To Level Up RockStar!</h1>
+            <p class="text-lg mt-2 text-center max-w-xl">A Rockstar is someone who excels in their field with exceptional skills, passion, and dedication. They are known for their standout performance, creativity, and ability to inspire others.</p>
+            <button class="mt-4 px-6 py-2 border-2 border-zinc-600  hover:bg-black rounded">Get Started</button>
+        </div> 
+        </div>
+    </section>
 
-     <div class="min-h-lvh bg-cover bg-center" style="background-image: url('1.jpg');">
-       <div class="flex items-center justify-center h-60 ">
-         <h1 class="text-4xl font-bold text-white animate-bounce bg-opacity-1 justify-center">Our Intelligent Technology Solutions and Services</h1>
-       </div>
-       <div class="flex items-center justify-center h-20 ">
-         <button class="p-2  bg-black hover:text-3xl text-white cursor-pointer rounded-md">Get Started</button>
-       </div>
-     </section>
-  
-  
-  <!-- Hero Section -->   
+    <!-- Top Esports Games -->
+    <section class="bg-[url(/images/back2.jpg)]  bg-cover   py-12">
+        <h2 class="text-3xl font-bold text-center mb-8 animate-bounce">Top Rockstar Games(2010)</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <!-- Game Cards -->
+            <div class="bg-gray-900 p-6 rounded-lg hover:scale-105">
+              <!-- gta games  -->
+                <img src="./images/gta3.jpeg" alt="PUBG" class="w-full rounded">
+                <h3 class="mt-4 text-xl font-bold cursor-pointer">GTA 3</h3>
+                <p class="text-sm mt-2">gta Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, impedit....</p>
+                <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded">Learn More</button>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg  hover:scale-110">
+                <img src="images/gta4.jpeg" alt="Counter Strike" class="w-full rounded">
+                <h3 class="mt-4 text-xl font-bold  cursor-pointer">GTA 4</h3>
+                <p class="text-sm mt-2">Countegta Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, impedit.......</p>
+                <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded">Learn More</button>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg  hover:scale-110">
+                <img src="images/gta5.jpeg" alt="Dota 2" class="w-full rounded">
+                <h3 class="mt-4 text-xl font-bold cursor-pointer">GTA 5</h3>
+                <p class="text-sm mt-2">Dotagta Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, impedit.......</p>
+                <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded">Learn More</button>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg  hover:scale-110">
+                <img src="images/maxpayen.png" alt="Valorant" class="w-full rounded">
+                <h3 class="mt-4 text-xl font-bold cursor-pointer">MAX PAYEN</h3>
+                <p class="text-sm mt-2">Valorantgta Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, impedit.......</p>
+                <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded">Learn More</button>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg  hover:scale-110">
+                <img src="images/red.jpeg" alt="Fortnite" class="w-full rounded">
+                <h3 class="mt-4 text-xl font-bold cursor-pointer">RED DEAD REDEMTION 2</h3>
+                <p class="text-sm mt-2">gta Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, impedit.......</p>
+                <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded">Learn More</button>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg  hover:scale-110">
+                <img src="images/bully.jpeg   " alt="Call of Duty" class="w-full rounded">
+                <h3 class="mt-4 text-xl font-bold cursor-pointer">BULLY</h3>
+                <p class="text-sm mt-2">BULLY Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, molestiae....</p>
+                <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded">Learn More</button>
+            </div>
+        </div>
+    </section>
 
-    <!-- About Section -->
-    <section class="py-20 bg-gray-100">
-      <div class="container mx-auto px-6 text-center">
-          <h2 class="text-4xl font-semibold text-gray-800 ">About Us</h2>
-          <p class="mt-4 text-gray-600">We are a team of dedicated professionals committed to providing top-notch services and solutions to our clients.</p>
-      </div>
-  </section>
+    <!-- Contact Form -->
+    <section class="bg-[url(/images/back3.jpg)] bg-cover  bg-gray-800 py-12">
+        <h2 class="text-3xl font-bold text-center mb-8 animate-bounce text-black">Get In Touch</h2>
+        <form class="max-w-4xl mx-auto bg-gray-700 p-8 rounded-lg space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <input type="text" placeholder="First Name" class="py-2 px-4 rounded bg-gray-800 text-gray-200 focus:outline-none">
+                <input type="text" placeholder="Last Name" class="py-2 px-4 rounded bg-gray-800 text-gray-200 focus:outline-none">
+            </div>
+            <input type="email" placeholder="Email Address" class="py-2 px-4 w-full rounded bg-gray-800 text-gray-200 focus:outline-none">
+            <input type="text" placeholder="Phone Number" class="py-2 px-4 w-full rounded bg-gray-800 text-gray-200 focus:outline-none">
+            <textarea placeholder="Address" class="py-2 px-4 w-full rounded bg-gray-800 text-gray-200 focus:outline-none"></textarea>
+            <button type="submit" class="w-full py-2 bg-blue-600 hover:bg-blue-700 rounded">Submit</button>
+        </form>
+    </section>
 
-  <!-- Services Section -->
-  <section class="py-20 bg-white">
-      <div class="container mx-auto px-6">
-          <h2 class="text-4xl font-semibold text-center text-gray-800 transform transition duration-300 hover:scale-110">Our Services</h2>
-          <div class="flex flex-wrap mt-10 justify-center">
-              <div class="w-full md:w-1/3 p-4">
-                  <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                      <img class="w-full h-56 object-cover" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/is_web_development_good_career.jpg" alt="Web Design">
-                      <div class="p-6">
-                          <h3 class="text-lg font-semibold text-gray-800">Web Development</h3>
-                          <p class="text-gray-600 mt-2">Creating visually stunning and user-friendly websites tailored to your needs.</p>
-                      </div>
-                  </div>
-              </div>
-              
-  <!-- Services Section 2 -->
-              <div class="w-full md:w-1/3 p-4">
-                  <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                      <img class="w-full h-56 object-cover" src="https://media.istockphoto.com/id/1360521208/photo/businessman-using-a-computer-for-analysis-seo-search-engine-optimization-marketing-ranking.jpg?s=612x612&w=0&k=20&c=UWrxVhwaaUYb7A-3BQHZTJTO7KM7cQYSC6yfcEbkhlk=" alt="SEO Optimization">
-                      <div class="p-6">
-                          <h3 class="text-lg font-semibold text-gray-800">SEO Optimization</h3>
-                          <p class="text-gray-600 mt-2">Boosting your website's visibility and ranking on search engines.</p>
-                      </div>
-                  </div>
-              </div>
-             <!-- Services Section 3-->
-              <div class="w-full md:w-1/3 p-4">
-                  <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                      <img class="w-full h-56 object-cover" src="https://t4.ftcdn.net/jpg/02/52/76/09/360_F_252760983_ZTCURKreID1WJkC7uiX6olt7hH0Q7v8X.jpg" alt="Digital Marketing">
-                      <div class="p-6">
-                          <h3 class="text-lg font-semibold text-gray-800">Digital Marketing</h3>
-                          <p class="text-gray-600 mt-2">Crafting effective digital marketing strategies to reach your target audience.</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  
-  <!-- Services Section 4 -->
-
-          <div class="flex flex-wrap mt-10 justify-center bg-white">
-              <div class="w-full md:w-1/3 p-4">
-                  <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                      <img class="w-full h-56 object-cover" src="https://geeks4learning.com/wp-content/uploads/2021/04/software-dev-australia.jpg" alt="Web Design">
-                      <div class="p-6">
-                          <h3 class="text-lg font-semibold text-gray-800">Software Development</h3>
-                          <p class="text-gray-600 mt-2">Creating visually stunning and user-friendly websites tailored to your needs.</p>
-                      </div>
-                  </div>
-              </div>
-              
-  <!-- Services Section 5 -->
-              <div class="w-full md:w-1/3 p-4">
-                  <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                      <img class="w-full h-56 object-cover" src="https://cdn.prod.website-files.com/65130e79c72ae8812db3412e/6718fbb85d1152665bfafec4_Untitled%20design%20(14).jpg" alt="SEO Optimization">
-                      <div class="p-6">
-                          <h3 class="text-lg font-semibold text-gray-800">Graphic Design</h3>
-                          <p class="text-gray-600 mt-2">Boosting your website's visibility and ranking on search engines.</p>
-                      </div>
-                  </div>
-              </div>
-                  </div>
-
-  <!-- Contact Section -->
-  <section class="py-20 bg-gray-100">
-      <div class="container mx-auto px-6 text-center">
-          <h2 class="text-4xl font-semibold text-gray-800 animate-pulse ">Get in Touch</h2>
-          <p class="mt-4 text-gray-600">Have any questions? We'd love to hear from you.</p>
-          <form class="mt-10 max-w-xl mx-auto " action="mailto:syedmesam.tms@gmail.com" method="post" enctype="text/plain">
-              <div class="flex flex-col md:flex-row md:space-x-4">
-                  <input type="text" class="w-full p-4 rounded-md border border-gray-300 focus:border-blue-500 focus:outline-none" placeholder="Your Name">
-                  <input type="email" class="w-full p-4 mt-4 md:mt-0 rounded-md border border-gray-300 focus:border-blue-500 focus:outline-none" placeholder="Your Email">
-              </div>
-              <textarea class="w-full p-4 mt-4 rounded-md border border-gray-300 focus:border-blue-500 focus:outline-none" placeholder="Your Message" rows="4"></textarea>
-              <button type="submit" class="mt-6 px-6 py-3 bg-blue-600 text-white text-lg font-semibold rounded-full hover:bg-blue-500 transition duration-300 animate-bounce">Send Message</button>
-          </form>
-      </div>
-  </section>
-  
-  <!-- Footer -->
-  <footer class="bg-white py-6">
-      <div class="container mx-auto px-6 text-center text-gray-600">
-          <p>&copy; 2024 MyWebsite. All rights reserved.</p>
-      </div>
-  </footer>
+    <!-- Footer -->
+    <!-- Navbar -->
+    <nav class="bg-gray-800 py-6 px-6 flex justify-between items-center">
+      <div class="text-2xl font-extrabold ">ROCKSTAR</div>
+      <ul class="flex space-x-6">
+          <li><a href="#" class="hover:text-blue-500">Home</a></li>
+          <li><a href="#" class="hover:text-blue-500">About</a></li>
+          <li><a href="#" class="hover:text-blue-500">Services</a></li>
+          <li><a href="#" class="hover:text-blue-500">Join Us</a></li>
+          <li><a href="#" class="hover:text-blue-500">Contact</a></li>
+      </ul>
+      <footer class="bg-gray-800 py-6 text-center text-sm">
+        <p>&copy; 2025. All rights reserved.</p>
+    </footer>
+      </nav>
 </body>
 </html>
