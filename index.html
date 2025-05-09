@@ -1,112 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RockStar</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="shortcut icon" href="icon2.png" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon" href="logo2.png" type="image/x-icon">
 </head>
-<body class="bg-gray-900 text-white">
-    <!-- Navbar -->
-    <nav class="bg-black py-4 px-6 flex justify-between items-center">
-        <div class="text-2xl font-stretch-125% hover:animate-bounce"><a href="https://www.rockstargames.com/" target="_blank">ROCKSTAR</a>
-        </div>
-        <ul class="flex space-x-6">
-            <li><a href="#" class="hover:text-blue-500 font-bold">Home</a></li>
-            <li><a href="#" class="hover:text-blue-500 font-bold">About</a></li>
-            <li><a href="#" class="hover:text-blue-500 font-bold">Services</a></li>
-            <li><a href="#" class="hover:text-blue-500 font-bold">Join Us</a></li>
-            <li><a href="#" class="hover:text-blue-500 font-bold">Contact</a></li>
-        </ul>
-        <input type="text" placeholder="Search" class="py-1 px-3 rounded border-2 bg-black text-gray-200 focus:outline-none">
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="relative h-96 bg-cover bg-center" style="background-image: url('https://via.placeholder.com/1500');">
-        <div class="bg-[url(back1.jpg)] bg-cover  absolute inset-0  flex flex-col justify-center items-center">
-           <div class="py-6 justify-end  rounded">
-            <h1 class="text-4xl font-bold animate-bounce">Welcome To Level Up RockStar!</h1>
-            <p class="text-lg mt-2 text-center max-w-xl">A Rockstar is someone who excels in their field with exceptional skills, passion, and dedication. They are known for their standout performance, creativity, and ability to inspire others.</p>
-            <button class="mt-4 px-6 py-2 border-2 border-zinc-600  hover:bg-black rounded">Get Started</button>
-        </div> 
-        </div>
-    </section>
-
-    <!-- Top Esports Games -->
-    <section class="bg-[url(back2.jpg)]  bg-cover   py-12">
-        <h2 class="text-3xl font-bold text-center mb-8 animate-bounce">Top Rockstar Games(2010)</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <!-- Game Cards -->
-            <div class="bg-gray-900 p-6 rounded-lg hover:scale-105">
-              <!-- gta games  -->
-                <img src="gta3.jpeg" alt="PUBG" class="w-full rounded">
-                <h3 class="mt-4 text-xl font-bold cursor-pointer">GTA 3</h3>
-                <p class="text-sm mt-2">gta Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, impedit....</p>
-                <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded">Learn More</button>
-            </div>
-            <div class="bg-gray-800 p-6 rounded-lg  hover:scale-110">
-                <img src="gta4.jpeg" alt="Counter Strike" class="w-full rounded">
-                <h3 class="mt-4 text-xl font-bold  cursor-pointer">GTA 4</h3>
-                <p class="text-sm mt-2">Countegta Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, impedit.......</p>
-                <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded">Learn More</button>
-            </div>
-            <div class="bg-gray-800 p-6 rounded-lg  hover:scale-110">
-                <img src="gta5.jpeg" alt="Dota 2" class="w-full rounded">
-                <h3 class="mt-4 text-xl font-bold cursor-pointer">GTA 5</h3>
-                <p class="text-sm mt-2">Dotagta Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, impedit.......</p>
-                <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded">Learn More</button>
-            </div>
-            <div class="bg-gray-800 p-6 rounded-lg  hover:scale-110">
-                <img src="maxpayen.png" alt="Valorant" class="w-full rounded">
-                <h3 class="mt-4 text-xl font-bold cursor-pointer">MAX PAYEN</h3>
-                <p class="text-sm mt-2">Valorantgta Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, impedit.......</p>
-                <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded">Learn More</button>
-            </div>
-            <div class="bg-gray-800 p-6 rounded-lg  hover:scale-110">
-                <img src="red.jpeg" alt="Fortnite" class="w-full rounded">
-                <h3 class="mt-4 text-xl font-bold cursor-pointer">RED DEAD REDEMTION 2</h3>
-                <p class="text-sm mt-2">gta Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, impedit.......</p>
-                <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded">Learn More</button>
-            </div>
-            <div class="bg-gray-800 p-6 rounded-lg  hover:scale-110">
-                <img src="bully.jpeg   " alt="Call of Duty" class="w-full rounded">
-                <h3 class="mt-4 text-xl font-bold cursor-pointer">BULLY</h3>
-                <p class="text-sm mt-2">BULLY Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, molestiae....</p>
-                <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded">Learn More</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Form -->
-    <section class="bg-[url(back3.jpg)] bg-cover  bg-gray-800 py-12">
-        <h2 class="text-3xl font-bold text-center mb-8 animate-bounce text-black">Get In Touch</h2>
-        <form class="max-w-4xl mx-auto bg-gray-700 p-8 rounded-lg space-y-4">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <input type="text" placeholder="First Name" class="py-2 px-4 rounded bg-gray-800 text-gray-200 focus:outline-none">
-                <input type="text" placeholder="Last Name" class="py-2 px-4 rounded bg-gray-800 text-gray-200 focus:outline-none">
-            </div>
-            <input type="email" placeholder="Email Address" class="py-2 px-4 w-full rounded bg-gray-800 text-gray-200 focus:outline-none">
-            <input type="text" placeholder="Phone Number" class="py-2 px-4 w-full rounded bg-gray-800 text-gray-200 focus:outline-none">
-            <textarea placeholder="Address" class="py-2 px-4 w-full rounded bg-gray-800 text-gray-200 focus:outline-none"></textarea>
-            <button type="submit" class="w-full py-2 bg-blue-600 hover:bg-blue-700 rounded">Submit</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <!-- Navbar -->
-    <nav class="bg-gray-800 py-6 px-6 flex justify-between items-center">
-      <div class="text-2xl font-extrabold ">ROCKSTAR</div>
-      <ul class="flex space-x-6">
-          <li><a href="#" class="hover:text-blue-500">Home</a></li>
-          <li><a href="#" class="hover:text-blue-500">About</a></li>
-          <li><a href="#" class="hover:text-blue-500">Services</a></li>
-          <li><a href="#" class="hover:text-blue-500">Join Us</a></li>
-          <li><a href="#" class="hover:text-blue-500">Contact</a></li>
-      </ul>
-      <footer class="bg-gray-800 py-6 text-center text-sm">
-        <p>&copy; 2025. All rights reserved.</p>
-    </footer>
+<body class="bg-gray-200 font-sans">
+  <!-- Sidebar -->
+  <div class="flex">
+    <aside class="w-20 h-screen bg-sky-900 flex flex-col items-center opacity-90 hover:opacity-100">
+      <div class="text-white bg-black mb-6"><img src="logo2.png" alt=""></div>
+      <nav class="flex flex-col gap-6 text-white">
+        <div><img src="./1.png" class="w-10  hover:w-14"></div>
+        <div><img src="./states.png" class="w-10 hover:w-14"></div>
+        <div><img src="./mail.png" class="w-10 hover:w-14"></div>
+        <div><img src="./comment.png" class="w-10 hover:w-14"></div>
       </nav>
+      <div class="mt-auto mb-4"><img src="./setting.png" class="w-9 hover:w-14"></div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+      <!-- Header -->
+       
+
+<!-- Header with fixed layout -->
+<div class="flex justify-between items-center mb-6 bg-white">
+
+  <!-- Left: Search and Dashboard title -->
+  <div class="flex items-center gap-4">
+    <!-- Search (unstyled, subtle) -->
+    <div class="relative">
+      <input
+        type="text"
+        placeholder="Search..."
+        class="bg-transparent text-sm m-4 focus:outline-none focus:ring-0"
+      />
+    </div>
+
+  </div>
+
+  <!-- Right: Profile → Notification → Sign out -->
+  <div class="flex items-center gap-4">
+    <!-- Profile Info -->
+    <div class="text-right">
+      <p class="font-semibold">Steve Jobs</p>
+      <p class="text-xs text-gray-500">Principal</p>
+    </div>
+    <img
+      src="./prof.png"
+      alt="Steve Jobs"
+      class="w-5 h-5 rounded-full"
+    />
+    <!-- Notification bell -->
+    <button class="relative">
+      <img src="./notification.png" class="w-5" alt="">
+      <!-- Optional: Red dot -->
+      <span class="absolute top-0 right-0 block h-2 w-2 rounded-full bg-red-500"></span>
+    </button>
+    <!-- Sign out -->
+    <button>
+      <img src="./signout.png" class="w-5 m-2.5" alt="">
+    </button>
+  </div>
+</div>
+
+
+
+        <div class="flex justify-between items-center m-4">
+        <div>
+          <h1 class="text-2xl font-bold">Dashboard</h1>
+          <p class="text-sm text-gray-600">Mobile UX/UI Design course</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <button class="border px-4 py-2 rounded text-sm hover:bg-white">Manage dashboard</button>
+          <button class="bg-purple-600 text-white px-4 py-2 rounded text-sm hover:bg-black">Create new dashboard</button>
+          <div class="text-right">
+            <!-- <p class="font-semibold">Steve Jobs</p>
+            <p class="text-xs text-gray-500">Principal</p> -->
+          </div>
+          <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Steve_Jobs_in_2007.jpg/120px-Steve_Jobs_in_2007.jpg" alt="Steve Jobs" class="w-10 h-10 rounded-full"/> -->
+        </div>
+      </div>
+
+      <!-- Cards -->
+      <div class="grid grid-cols-4 gap-4 mt-6 m-2">
+        <div class="bg-white p-4 rounded shadow">
+          <p class="text-sm text-gray-500">Students</p>
+          <h2 class="text-2xl font-bold">62</h2>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+          <p class="text-sm text-gray-500">Average mark</p>
+          <h2 class="text-2xl font-bold">6.8</h2>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+          <p class="text-sm text-gray-500">Underperforming students</p>
+          <h2 class="text-2xl font-bold">9 (14%)</h2>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+          <p class="text-sm text-gray-500">Finished homeworks</p>
+          <h2 class="text-2xl font-bold">83%</h2>
+        </div>
+      </div>
+
+      <!-- Charts + Students -->
+      <div class="grid grid-cols-3 gap-4 mt-6 m-2">
+        <div class="col-span-2 size-89 bg-white p-6 rounded shadow h-48 flex items-center justify-center text-gray-400">
+          CHART
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+          <p class="text-lg font-semibold mb-2">Students by average mark</p>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2">
+              <img src="./prof.png" class="w-6 h-6 rounded-full" />
+              <span class="flex-1">Steve Jobs</span>
+              <span>9.3</span>
+            </li>
+            <li class="flex items-center gap-2">
+                <img src="./prof.png" class="w-6 h-6 rounded-full" />
+                <span class="flex-1">Steve Jobs</span>
+                <span>9.3</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="./prof.png" class="w-6 h-6 rounded-full" />
+                <span class="flex-1">Steve Jobs</span>
+                <span>9.3</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="./prof.png" class="w-6 h-6 rounded-full" />
+                <span class="flex-1">Steve Jobs</span>
+                <span>9.3</span>
+              </li>
+
+            <!-- Repeat as needed -->
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Section -->
+      <div class="grid grid-cols-3 gap-4 mt-6 m-2">
+        <div class="bg-white p-4 rounded shadow">
+          <p class="text-sm text-gray-500">Lectures left</p>
+          <h2 class="text-2xl font-bold">25</h2>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+          <p class="text-sm text-gray-500">Hours spent on lectures</p>
+          <h2 class="text-2xl font-bold">139</h2>
+        </div>
+        <div class="bg-white p-4 rounded shadow flex items-center justify-center text-gray-400">
+          Chart (Students by type of studying)
+        </div>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
